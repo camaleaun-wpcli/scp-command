@@ -1,0 +1,37 @@
+{
+    "name": "camaleaun/scp-command",
+    "type": "wp-cli-package",
+    "description": "OpenSSH secure file copy",
+    "homepage": "https://github.com/camaleaun/scp-command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilberto Tavares",
+            "email": "camaleaun@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-cli/wp-cli": "^2"
+    },
+    "require-dev": {
+        "wp-cli/wp-cli-tests": "^2.1"
+    },
+    "extra": {
+        "commands": [
+            "scp"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "files": [
+            "scp-command.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "phpcs": "run-phpcs-tests"
+    }
+}
